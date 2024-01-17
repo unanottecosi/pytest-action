@@ -24,7 +24,7 @@ def setup(request):
     for option in options:
         chrome_options.add_argument(option)
 
-    request.cls.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    request.cls.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
     
     yield request.cls.driver
     request.cls.driver.close()
