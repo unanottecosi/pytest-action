@@ -17,7 +17,6 @@ class TestExampleTwo:
     
     def test_title_github(self):
         self.driver.get('http://github.com')
-        print(self.driver.title)
         sleep(1)
         print("\nDriver Title: " + self.driver.title)
         sleep(2)
