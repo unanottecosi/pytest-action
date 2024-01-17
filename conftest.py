@@ -19,7 +19,7 @@ def setup(request):
 #     "--disable-dev-shm-usage"
 # ]
     options = Options()
-    #options.add_argument('--headless')
+    options.add_argument('--headless')
 
     # for option in options:
     #     chrome_options.add_argument(option)
