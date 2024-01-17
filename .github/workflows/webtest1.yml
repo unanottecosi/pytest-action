@@ -20,5 +20,5 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run the PytTest script
-        run: pyest test_simple_web2.py -s
+        run: pytest test_simple_web2.py -s
         #run: pytest -rA 
